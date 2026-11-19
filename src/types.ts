@@ -1,7 +1,7 @@
 export type SkillId = 'planche' | 'front-lever' | 'handstand' | 'muscle-up';
 export type SkillLevelId = 'base' | 'principiante' | 'intermedio' | 'avanzado';
-export type SupportMode = 'autonomy' | 'review';
-export type TierId = 'individual' | 'duo' | 'complete';
+export type BlockerId = 'fuerza' | 'tecnica' | 'programacion' | 'estancamiento';
+export type ModalityId = 'online' | 'salta';
 
 export interface CoachProfile {
   name: string;
@@ -28,6 +28,7 @@ export interface SkillDefinition {
   shortDesc: string;
   image: string;
   objectPosition: string;
+  basePrescription: string;
   levels: {
     id: Exclude<SkillLevelId, 'base'>;
     label: string;
@@ -35,16 +36,6 @@ export interface SkillDefinition {
     entryTest: string;
     focus: string;
   }[];
-}
-
-export interface TierDefinition {
-  id: TierId;
-  name: string;
-  label: string;
-  count: number;
-  priceArs: string;
-  priceUsd: string;
-  savingNote?: string;
 }
 
 export interface FaqItem {

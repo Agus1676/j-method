@@ -1,11 +1,7 @@
 import React from 'react';
-import { COACH_DATA, getWhatsAppLink } from '../data/content';
+import { getWhatsAppLink } from '../data/content';
 
-interface FooterProps {
-  onOpenGuide: () => void;
-}
-
-export const Footer: React.FC<FooterProps> = ({ onOpenGuide }) => {
+export const Footer: React.FC = () => {
   return (
     <footer className="bg-[#0b0b0e] border-t border-white/[0.12] py-7 pb-24 md:pb-7">
       <div className="max-w-[1184px] mx-auto px-5 sm:px-12 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-[#a895b2]">
@@ -31,21 +27,17 @@ export const Footer: React.FC<FooterProps> = ({ onOpenGuide }) => {
           aria-label="Explorar J-Method"
           className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-[11px] text-[#b9a8c4]"
         >
-          <a href="#mapa" className="hover:text-white transition-colors">
-            Skill Map gratis
-          </a>
-          <button
-            type="button"
-            onClick={onOpenGuide}
-            className="hover:text-white transition-colors"
-          >
-            Guía 14 págs
-          </button>
-          <a href="#programas" className="hover:text-white transition-colors">
-            Programas
+          <a href="#diagnostico" className="hover:text-white transition-colors">
+            Diagnóstico inicial
           </a>
           <a href="#coaching" className="hover:text-white transition-colors">
-            Coaching
+            Modalidades
+          </a>
+          <a href="#metodo" className="hover:text-white transition-colors">
+            El Método
+          </a>
+          <a href="#coach" className="hover:text-white transition-colors">
+            Jorge Daniel
           </a>
           <a
             href={getWhatsAppLink('Hola Jorge! Vengo de la web J-METHOD.')}

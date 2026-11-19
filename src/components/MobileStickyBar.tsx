@@ -5,18 +5,18 @@ export const MobileStickyBar: React.FC = () => {
   return (
     <div className="fixed bottom-0 inset-x-0 z-40 md:hidden bg-[#0b0b0e]/95 backdrop-blur-md border-t border-white/20 px-2.5 py-2.5 grid grid-cols-3 gap-1.5">
       <a
-        href="#mapa"
+        href="#diagnostico"
         className="bg-[#eee7e1] text-[#261a23] rounded-[7px] min-h-[42px] px-2.5 py-2 text-[10px] font-extrabold flex items-center justify-between gap-1"
       >
-        <span>Skill Map</span>
+        <span>Diagnóstico</span>
         <span aria-hidden="true">↓</span>
       </a>
 
       <a
-        href="#programas"
+        href="#coaching"
         className="bg-[#1a191f] border border-white/20 text-[#f3f0ec] rounded-[7px] min-h-[42px] px-2.5 py-2 text-[10px] font-bold flex items-center justify-between gap-1"
       >
-        <span>Programas</span>
+        <span>Modalidades</span>
         <span aria-hidden="true">↓</span>
       </a>
 
