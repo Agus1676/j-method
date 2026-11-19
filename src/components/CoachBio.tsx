@@ -1,147 +1,159 @@
-import React, { useState } from 'react';
-import { 
-  MapPin, 
-  Mail, 
-  MessageCircle, 
-  ChevronDown,
-  HelpCircle,
-  Award
-} from 'lucide-react';
-import { InstagramIcon, YouTubeIcon, TikTokIcon } from './SocialIcons';
+import React from 'react';
 import { COACH_DATA, FAQ_DATA, getWhatsAppLink } from '../data/content';
+import { InstagramIcon, TikTokIcon, YouTubeIcon } from './SocialIcons';
 
 export const CoachBio: React.FC = () => {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const toggleFaq = (idx: number) => {
-    setOpenFaq(openFaq === idx ? null : idx);
-  };
-
   return (
-    <section id="coach" className="py-12 md:py-16 relative bg-[#0c0e10]">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-          {/* Coach Bio Card (Left 7 cols) */}
-          <div className="md:col-span-7 glass-panel rounded-2xl border border-white/10 p-6 sm:p-8">
-            <div className="flex items-center gap-4 mb-5">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-tr from-[#1E2328] to-[#121518] p-1 border border-[#CCFF00]/40 flex-shrink-0 overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=300&q=80"
-                  alt="Jorge Daniel - Coach de Calistenia"
-                  className="w-full h-full object-cover rounded-xl"
-                />
-              </div>
-
+    <>
+      {/* Editorial Coach Section */}
+      <section
+        id="coach"
+        aria-labelledby="about-title"
+        className="border-t border-white/[0.09] py-12 lg:py-16 scroll-mt-20"
+      >
+        <div className="max-w-[1184px] mx-auto px-5 sm:px-12 grid grid-cols-1 lg:grid-cols-[0.8fr_1fr] items-center gap-8 lg:gap-16">
+          {/* Left Portrait Frame */}
+          <div className="bg-[#15151b] border border-white/[0.14] rounded-[14px] h-[340px] sm:h-[400px] relative overflow-hidden shadow-2xl">
+            <img
+              src="/images/hero.webp"
+              alt="Jorge Daniel SW en barra de calistenia"
+              loading="lazy"
+              className="w-full h-full object-cover object-[50%_35%]"
+            />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0b0b0e] via-[#0b0b0e]/80 to-transparent pt-16 pb-5 px-6 flex items-end justify-between gap-4">
               <div>
-                <span className="text-[10px] uppercase font-mono tracking-widest text-[#CCFF00] font-bold block">
-                  ENTRENADOR & ATLETA SW
+                <span className="block text-[20px] sm:text-[22px] font-extrabold tracking-[-0.04em] text-[#f3f0ec] leading-none">
+                  JORGE DANIEL SW
                 </span>
-                <h2 className="text-xl sm:text-2xl font-heading font-black text-white">
-                  Jorge Daniel
-                </h2>
-                <span className="text-xs text-slate-400 font-mono">
-                  @jorgedaniel_sw
+                <span className="block text-[8px] sm:text-[9px] font-semibold tracking-[0.17em] text-[#d0cdd8] mt-1.5 uppercase">
+                  ATLETA / ENTRENADOR · SALTA CAPITAL, ARGENTINA
                 </span>
-                <div className="flex items-center gap-1 text-[11px] text-slate-300 mt-1">
-                  <MapPin className="w-3 h-3 text-[#CCFF00]" />
-                  <span>Salta Capital, Argentina</span>
-                </div>
               </div>
+              <span className="text-[10px] font-mono text-[#ef4255] font-bold">
+                @{COACH_DATA.instagram}
+              </span>
             </div>
+          </div>
 
-            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
-              Creé el método <strong className="text-white">J-METHOD</strong> para que atletas de cualquier nivel puedan desbloquear Handstand, Muscle-Up, Front Lever y Planche sin lesionarse muñecas ni hombros, a través de corrección técnica 1 a 1 en video.
+          {/* Right Editorial Copy & Channels */}
+          <div>
+            <p className="jm-eyebrow mb-3.5">DE ATLETA A TU ENTRENAMIENTO</p>
+            <h2
+              id="about-title"
+              className="text-[30px] sm:text-[42px] font-extrabold tracking-[-0.055em] leading-[1.06] text-[#f3f0ec]"
+            >
+              YO TAMBIÉN TUVE
+              <br />
+              QUE <span className="text-[#ef4255]">EMPEZAR.</span>
+            </h2>
+
+            <p className="text-[13px] sm:text-[14px] text-[#b4b2be] max-w-[510px] mt-4 leading-[1.85]">
+              Mis primeras habilidades también fueron intentos, errores y progresiones que tocaba aprender. Hoy entreno planche, front lever, handstand y muscle-up, y trabajo como entrenador de calistenia desde <strong className="text-[#f3f0ec] font-semibold">Salta Capital</strong> para atletas presenciales y online.
+            </p>
+            <p className="text-[13px] sm:text-[14px] text-[#b4b2be] max-w-[510px] mt-3.5 leading-[1.85]">
+              Mi trabajo con vos es convertir un objetivo que parece lejano en decisiones concretas: qué practicar, qué corregir en cada serie y cómo organizar tu semana.
             </p>
 
-            {/* Social Links */}
-            <div className="flex items-center gap-2 mb-6">
+            {/* Editorial Social & Contact Strip */}
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-6 pt-4 border-t border-white/[0.09]">
               <a
                 href={COACH_DATA.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center gap-1.5 text-xs text-slate-300 hover:text-[#CCFF00] transition-colors"
+                className="inline-flex items-center gap-2 text-[11px] font-bold text-[#f4f1ed] hover:text-[#ff8a97] border-b border-white/25 hover:border-[#ef4255] pb-1 transition-colors"
               >
-                <InstagramIcon className="w-3.5 h-3.5" />
-                <span>Instagram</span>
+                <InstagramIcon className="w-3.5 h-3.5 text-[#ef4255]" />
+                <span>Instagram @{COACH_DATA.instagram}</span>
+                <span aria-hidden="true">↗</span>
               </a>
 
               <a
                 href={COACH_DATA.tiktokUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center gap-1.5 text-xs text-slate-300 hover:text-[#CCFF00] transition-colors"
+                className="inline-flex items-center gap-2 text-[11px] font-bold text-[#f4f1ed] hover:text-[#ff8a97] border-b border-white/25 hover:border-[#ef4255] pb-1 transition-colors"
               >
-                <TikTokIcon className="w-3.5 h-3.5" />
-                <span>TikTok</span>
+                <TikTokIcon className="w-3.5 h-3.5 text-[#ef4255]" />
+                <span>TikTok @{COACH_DATA.tiktok}</span>
+                <span aria-hidden="true">↗</span>
               </a>
 
               <a
                 href={COACH_DATA.youtubeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center gap-1.5 text-xs text-slate-300 hover:text-[#CCFF00] transition-colors"
+                className="inline-flex items-center gap-2 text-[11px] font-bold text-[#f4f1ed] hover:text-[#ff8a97] border-b border-white/25 hover:border-[#ef4255] pb-1 transition-colors"
               >
-                <YouTubeIcon className="w-3.5 h-3.5" />
-                <span>YouTube</span>
+                <YouTubeIcon className="w-3.5 h-3.5 text-[#ef4255]" />
+                <span>YouTube @{COACH_DATA.youtube}</span>
+                <span aria-hidden="true">↗</span>
               </a>
             </div>
 
-            {/* Direct WhatsApp Action */}
-            <div className="flex flex-col sm:flex-row items-center gap-3 pt-4 border-t border-white/10">
+            {/* Direct Contact Micro Row */}
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 mt-4 text-[11px] text-[#9e9ba8]">
               <a
-                href={getWhatsAppLink('Hola Jorge! Quiero que me asesores para empezar con el J-METHOD.')}
+                href={getWhatsAppLink('Hola Jorge! Vi tu perfil en la web J-METHOD y quiero consultarte por los entrenamientos.')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#CCFF00] text-black font-extrabold text-xs hover:bg-[#bbf000] transition-all shadow-md shadow-[#CCFF00]/20"
+                className="hover:text-white transition-colors"
               >
-                <MessageCircle className="w-4 h-4 fill-current" />
-                <span>Hablar con Jorge por WhatsApp</span>
+                WhatsApp: <strong className="text-[#e4dce7]">{COACH_DATA.phoneDisplay}</strong>
               </a>
-
+              <span className="text-white/20">·</span>
               <a
                 href={`mailto:${COACH_DATA.email}`}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 text-xs border border-white/10 transition-colors"
+                className="hover:text-white transition-colors"
               >
-                <Mail className="w-3.5 h-3.5 text-[#CCFF00]" />
-                <span>{COACH_DATA.email}</span>
+                Email: <strong className="text-[#e4dce7]">{COACH_DATA.email}</strong>
               </a>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* FAQ Compact (Right 5 cols) */}
-          <div id="faq" className="md:col-span-5 space-y-2.5">
-            <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
-              <HelpCircle className="w-4 h-4 text-[#CCFF00]" />
-              <span>Dudas Frecuentes</span>
-            </div>
+      {/* Editorial 2-Column FAQ Section */}
+      <section
+        id="faq"
+        aria-labelledby="map-faq-title"
+        className="border-t border-white/[0.09] py-12 lg:py-14 scroll-mt-20"
+      >
+        <div className="max-w-[1184px] mx-auto px-5 sm:px-12 grid grid-cols-1 lg:grid-cols-[0.6fr_1fr] gap-8 lg:gap-16 items-start">
+          <div>
+            <p className="jm-eyebrow mb-3">ANTES DE EMPEZAR</p>
+            <h2
+              id="map-faq-title"
+              className="text-[28px] sm:text-[38px] font-extrabold tracking-[-0.055em] leading-[1.1] text-[#f3f0ec]"
+            >
+              Que la duda
+              <br />
+              <span className="text-[#9c8da7]">no te pare.</span>
+            </h2>
+          </div>
 
-            {FAQ_DATA.slice(0, 4).map((faq, idx) => {
-              const isOpen = openFaq === idx;
-              return (
-                <div
-                  key={idx}
-                  className="glass-panel rounded-xl border border-white/10 overflow-hidden text-xs transition-colors"
-                >
-                  <button
-                    onClick={() => toggleFaq(idx)}
-                    className="w-full p-3.5 text-left flex items-center justify-between gap-2 font-semibold text-slate-200 hover:text-white"
+          <div>
+            {FAQ_DATA.map((item, idx) => (
+              <details
+                key={idx}
+                className="group border-t border-white/[0.15] last:border-b py-3.5"
+              >
+                <summary className="cursor-pointer flex items-center justify-between gap-5 min-h-[38px] text-[13px] sm:text-[14px] font-semibold text-[#f3f0ec] list-none select-none">
+                  <span>{item.question}</span>
+                  <span
+                    aria-hidden="true"
+                    className="text-[#eb687f] text-[22px] font-normal leading-none transition-transform duration-200 group-open:rotate-45 flex-shrink-0"
                   >
-                    <span>{faq.question}</span>
-                    <ChevronDown className={`w-3.5 h-3.5 text-[#CCFF00] flex-shrink-0 transition-transform ${
-                      isOpen ? 'rotate-180' : ''
-                    }`} />
-                  </button>
-                  {isOpen && (
-                    <div className="px-3.5 pb-3.5 text-slate-400 leading-relaxed border-t border-white/5 pt-2">
-                      {faq.answer}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
+                    +
+                  </span>
+                </summary>
+                <p className="text-[12px] sm:text-[13px] text-[#b6a1c2] max-w-[600px] mt-2.5 pb-1 leading-[1.85]">
+                  {item.answer}
+                </p>
+              </details>
+            ))}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };

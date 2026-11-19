@@ -1,29 +1,34 @@
 import React from 'react';
-import { Compass, MessageCircle } from 'lucide-react';
 import { getWhatsAppLink } from '../data/content';
 
 export const MobileStickyBar: React.FC = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 p-3 bg-[#0B0D0E]/95 backdrop-blur-xl border-t border-white/10 md:hidden">
-      <div className="flex items-center gap-2">
-        <a
-          href="#skill-map"
-          className="flex-1 py-3 px-3 rounded-xl bg-white/10 border border-white/15 text-white font-bold text-xs flex items-center justify-center gap-1.5 active:scale-95 transition-transform"
-        >
-          <Compass className="w-4 h-4 text-[#CCFF00]" />
-          <span>Skill Map Gratis</span>
-        </a>
+    <div className="fixed bottom-0 inset-x-0 z-40 md:hidden bg-[#0b0b0e]/95 backdrop-blur-md border-t border-white/20 px-2.5 py-2.5 grid grid-cols-3 gap-1.5">
+      <a
+        href="#mapa"
+        className="bg-[#eee7e1] text-[#261a23] rounded-[7px] min-h-[42px] px-2.5 py-2 text-[10px] font-extrabold flex items-center justify-between gap-1"
+      >
+        <span>Skill Map</span>
+        <span aria-hidden="true">↓</span>
+      </a>
 
-        <a
-          href={getWhatsAppLink('Hola Jorge! Vengo de la web J-METHOD desde mi celular y quiero info de los planes de coaching.')}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1 py-3 px-3 rounded-xl bg-[#CCFF00] text-black font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-lg shadow-[#CCFF00]/25 active:scale-95 transition-transform"
-        >
-          <MessageCircle className="w-4 h-4 fill-current" />
-          <span>WhatsApp Coach</span>
-        </a>
-      </div>
+      <a
+        href="#programas"
+        className="bg-[#1a191f] border border-white/20 text-[#f3f0ec] rounded-[7px] min-h-[42px] px-2.5 py-2 text-[10px] font-bold flex items-center justify-between gap-1"
+      >
+        <span>Programas</span>
+        <span aria-hidden="true">↓</span>
+      </a>
+
+      <a
+        href={getWhatsAppLink('Hola Jorge! Vengo de la web J-METHOD y quiero consultar por el coaching.')}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-[#d91831] text-white rounded-[7px] min-h-[42px] px-2.5 py-2 text-[10px] font-bold flex items-center justify-between gap-1"
+      >
+        <span>WhatsApp</span>
+        <span aria-hidden="true">↗</span>
+      </a>
     </div>
   );
 };

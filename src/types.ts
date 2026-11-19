@@ -1,3 +1,8 @@
+export type SkillId = 'planche' | 'front-lever' | 'handstand' | 'muscle-up';
+export type SkillLevelId = 'base' | 'principiante' | 'intermedio' | 'avanzado';
+export type SupportMode = 'autonomy' | 'review';
+export type TierId = 'individual' | 'duo' | 'complete';
+
 export interface CoachProfile {
   name: string;
   brand: string;
@@ -17,58 +22,32 @@ export interface CoachProfile {
   youtubeUrl: string;
 }
 
-export interface SkillItem {
-  id: string;
+export interface SkillDefinition {
+  id: SkillId;
   name: string;
-  level: string;
-  tag: string;
-  description: string;
-  prerequisites: string[];
-  stages: {
-    stage: string;
-    title: string;
-    desc: string;
-  }[];
-  keyTip: string;
-}
-
-export interface PlanItem {
-  id: string;
-  name: string;
-  badge?: string;
-  price: string;
-  billingPeriod: string;
-  description: string;
-  popular?: boolean;
-  features: string[];
-  ctaText: string;
-  whatsappPreset: string;
-}
-
-export interface Testimonial {
-  name: string;
-  role: string;
-  result: string;
-  skill: string;
-  quote: string;
+  shortDesc: string;
   image: string;
-  timeframe: string;
+  objectPosition: string;
+  levels: {
+    id: Exclude<SkillLevelId, 'base'>;
+    label: string;
+    index: string;
+    entryTest: string;
+    focus: string;
+  }[];
+}
+
+export interface TierDefinition {
+  id: TierId;
+  name: string;
+  label: string;
+  count: number;
+  priceArs: string;
+  priceUsd: string;
+  savingNote?: string;
 }
 
 export interface FaqItem {
   question: string;
   answer: string;
-  category?: string;
-}
-
-export interface QuizQuestion {
-  id: string;
-  title: string;
-  subtitle: string;
-  options: {
-    label: string;
-    description?: string;
-    icon?: string;
-    value: string;
-  }[];
 }
