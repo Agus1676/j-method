@@ -20,7 +20,7 @@ export const App: React.FC = () => {
         {/* 3-Step Interactive Technical Assessment & Biomechanical Dossier */}
         <SkillMapQuiz />
 
-        {/* Editorial Contrast Coaching Modalities (Online 1:1 vs Presencial Salta) + Method */}
+        {/* Editorial Contrast Coaching Modalities (Online 1:1 vs Intensivo 12 Semanas) + Method */}
         <Programs />
 
         {/* Coach Bio (Jorge Daniel @jorgedaniel_sw) + Compact Editorial FAQ */}

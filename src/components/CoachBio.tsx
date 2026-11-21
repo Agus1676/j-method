@@ -26,7 +26,7 @@ export const CoachBio: React.FC = () => {
                   JORGE DANIEL SW
                 </span>
                 <span className="block text-[8px] sm:text-[9px] font-semibold tracking-[0.17em] text-[#d0cdd8] mt-1.5 uppercase">
-                  ATLETA / ENTRENADOR · SALTA CAPITAL, ARGENTINA
+                  ATLETA / ENTRENADOR · COACHING 100% ONLINE
                 </span>
               </div>
               <span className="text-[10px] font-mono text-[#ef4255] font-bold">
@@ -48,7 +48,7 @@ export const CoachBio: React.FC = () => {
             </h2>
 
             <p className="text-[13px] sm:text-[14px] text-[#b4b2be] max-w-[510px] mt-4 leading-[1.85]">
-              Mis primeras habilidades también fueron intentos, errores y progresiones que tocaba aprender. Hoy entreno planche, front lever, handstand y muscle-up, y trabajo como entrenador de calistenia desde <strong className="text-[#f3f0ec] font-semibold">Salta Capital</strong> para atletas presenciales y online.
+              Mis primeras habilidades también fueron intentos, errores y progresiones que tocaba aprender. Hoy entreno planche, front lever, handstand y muscle-up, y trabajo como entrenador especializado guiando a atletas de todo el mundo mediante <strong className="text-[#f3f0ec] font-semibold">coaching 1 a 1 100% online</strong>.
             </p>
             <p className="text-[13px] sm:text-[14px] text-[#b4b2be] max-w-[510px] mt-3.5 leading-[1.85]">
               Mi trabajo con vos es convertir un objetivo que parece lejano en decisiones concretas: qué practicar, qué corregir en cada serie y cómo organizar tu semana.

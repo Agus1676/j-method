@@ -29,7 +29,7 @@ export const Programs: React.FC = () => {
           </p>
         </div>
 
-        {/* 2-Column Editorial Contrast Cards (Online 1:1 vs Presencial Salta) */}
+        {/* 2-Column Editorial Contrast Cards (Online 1:1 Mensual vs Programa Intensivo 12 Semanas) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
           {/* CARD 01: COACHING ONLINE 1 A 1 (Warm Editorial Bone Card) */}
           <article className="jm-coaching-bone rounded-[14px] p-6 sm:p-8 flex flex-col justify-between shadow-xl">
@@ -122,34 +122,34 @@ export const Programs: React.FC = () => {
             </div>
           </article>
 
-          {/* CARD 02: ENTRENAMIENTO PRESENCIAL SALTA CAPITAL (Dark Obsidian Architectural Card) */}
+          {/* CARD 02: PROGRAMA INTENSIVO 12 SEMANAS (Dark Obsidian Architectural Card) */}
           <article className="bg-[linear-gradient(135deg,#1c171e,#141418_65%)] border border-white/[0.16] rounded-[14px] p-6 sm:p-8 flex flex-col justify-between shadow-xl">
             <div>
               <div className="flex items-center justify-between gap-3 mb-5 text-[9px] font-bold tracking-[0.13em] text-[#afadb8] uppercase">
-                <span>02 / ENTRENAMIENTO PRESENCIAL</span>
+                <span>02 / BLOQUE ESPECIALIZADO</span>
                 <span className="border border-[#5b5a64] px-2 py-0.5 text-[8px] tracking-[0.08em] text-[#d2d0da]">
-                  SALTA CAPITAL · ARGENTINA
+                  PROGRAMA INTENSIVO 12 SEMANAS
                 </span>
               </div>
 
               <h3 className="text-[28px] sm:text-[32px] font-extrabold tracking-[-0.055em] leading-[1.08] text-[#f3f0ec]">
-                TÉCNICA EN VIVO.
+                FUERZA MÁXIMA.
                 <br />
-                CORRECCIÓN REAL.
+                CONTROL BIOMECÁNICO.
               </h3>
 
               <p className="text-[13px] sm:text-[14px] text-[#b1afba] max-w-[400px] mt-3.5 leading-[1.75]">
-                Entrená cara a cara con Jorge Daniel en Salta Capital. Corrección postural y biomecánica en el momento para avanzar con confianza.
+                Un bloque periodizado de 12 semanas enfocado en desbloquear una skill específica (Planche, Front Lever, Handstand o Muscle-Up) con sobrecarga y acondicionamiento tendinoso.
               </p>
 
               {/* Architectural 3-Column Spec Strip */}
               <div className="grid grid-cols-3 border-y border-white/[0.12] my-5 py-3">
                 <div className="pr-3 border-r border-white/[0.12]">
                   <span className="block text-[9px] font-bold uppercase tracking-wider text-[#aaa7b4]">
-                    Ubicación
+                    Duración
                   </span>
                   <strong className="text-[17px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#f3f0ec]">
-                    Salta Cap.
+                    12 Semanas
                   </strong>
                 </div>
                 <div className="px-3 border-r border-white/[0.12]">
@@ -157,7 +157,7 @@ export const Programs: React.FC = () => {
                     Modalidad
                   </span>
                   <strong className="text-[17px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#f3f0ec]">
-                    En Vivo
+                    100% Online
                   </strong>
                 </div>
                 <div className="pl-3">
@@ -174,19 +174,19 @@ export const Programs: React.FC = () => {
                 <li className="flex items-center gap-2.5">
                   <span className="text-[#ff8491] font-bold">✓</span>
                   <span>
-                    Evaluación física, movilidad articular y activación escapular en vivo
+                    Periodización estricta por microciclos: fuerza específica, hipertrofia y descarga
                   </span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <span className="text-[#ff8491] font-bold">✓</span>
                   <span>
-                    Corrección inmediata de línea en Handstand, Muscle-Up, Front Lever y Planche
+                    Auditoría de video continua: optimización biomecánica y corrección de palancas
                   </span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <span className="text-[#ff8491] font-bold">✓</span>
                   <span>
-                    Estructura de entrenamiento semanal adaptada a tu frecuencia
+                    Protocolo de salud articular y fortalecimiento de tendones distales
                   </span>
                 </li>
               </ul>
@@ -195,17 +195,17 @@ export const Programs: React.FC = () => {
             <div>
               <a
                 href={getWhatsAppLink(
-                  'Hola Jorge! Estoy en Salta Capital y quiero consultar disponibilidad y horarios para entrenar presencial con vos.'
+                  'Hola Jorge! Vengo de la web J-METHOD y quiero consultar disponibilidad para el Programa Intensivo de 12 Semanas de Skills.'
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="jm-btn-ghost w-full border-white/30 hover:border-[#ef4255]"
               >
-                <span>CONSULTAR CUPOS PRESENCIALES EN SALTA</span>
+                <span>CONSULTAR POR EL PROGRAMA INTENSIVO 12 SEMANAS</span>
                 <span aria-hidden="true">↗</span>
               </a>
               <small className="block text-center text-[10px] text-[#9e9ba8] mt-2.5">
-                Coordinación directa de días y horarios por WhatsApp.
+                Coordinación directa y asesoramiento técnico por WhatsApp.
               </small>
             </div>
           </article>

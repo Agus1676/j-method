@@ -19,7 +19,7 @@ export const Navbar: React.FC = () => {
               JORGE DANIEL SW
             </span>
             <small className="text-[7px] sm:text-[8px] font-semibold tracking-[0.22em] text-[#9c9ca7] mt-1 uppercase">
-              J-METHOD COACHING · SALTA & ONLINE
+              J-METHOD COACHING · 100% ONLINE
             </small>
           </span>
         </a>
@@ -37,7 +37,7 @@ export const Navbar: React.FC = () => {
             className="hidden sm:inline-flex text-[#bfbcc8] hover:text-white transition-colors py-2 items-center gap-1.5"
           >
             <span>Modalidades</span>
-            <span className="text-[10px] text-[#ff8592]">1:1 & Salta</span>
+            <span className="text-[10px] text-[#ff8592]">Planes 1:1</span>
           </a>
           <a
             href="#metodo"

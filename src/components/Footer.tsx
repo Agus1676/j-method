@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
           <span className="text-white/20">·</span>
           <span>Fuerza. Habilidades. Control.</span>
           <span className="text-white/20 hidden sm:inline">·</span>
-          <span className="hidden sm:inline">Salta Capital, Argentina</span>
+          <span className="hidden sm:inline">Coaching 100% Online · Sin Fronteras</span>
         </div>
 
         {/* Minimal Editorial Nav */}

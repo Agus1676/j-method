@@ -74,8 +74,8 @@ export const SkillMapQuiz: React.FC = () => {
     const skillName = SKILL_LABELS[selectedSkill];
     const levelName = LEVEL_LABELS[selectedPoint];
     const modName =
-      selectedModality === 'salta'
-        ? 'Presencial en Salta Capital'
+      selectedModality === 'intensivo'
+        ? 'Programa Intensivo 12 Semanas'
         : 'Coaching Online 1 a 1';
 
     const msg = `Hola Jorge! Completé mi *Diagnóstico Técnico J-METHOD* en la web:
@@ -449,24 +449,24 @@ Quiero que revises mi ficha técnica para armar mi planificación. ¿Cómo empez
                         }`}
                       >
                         <span className="block text-[9px] uppercase opacity-75">
-                          100% Individual
+                          Mensual 1 a 1
                         </span>
-                        Online 1 a 1
+                        Coaching Online
                       </button>
 
                       <button
                         type="button"
-                        onClick={() => setSelectedModality('salta')}
+                        onClick={() => setSelectedModality('intensivo')}
                         className={`py-2.5 px-3 rounded-[8px] border text-[11px] font-bold transition-all text-left ${
-                          selectedModality === 'salta'
+                          selectedModality === 'intensivo'
                             ? 'bg-[#eee7e1] border-[#eee7e1] text-[#261925]'
                             : 'bg-[#101016] border-white/[0.15] text-[#b8a7c2] hover:text-white'
                         }`}
                       >
                         <span className="block text-[9px] uppercase opacity-75">
-                          Salta Capital
+                          12 Semanas
                         </span>
-                        Presencial
+                        Intensivo Skills
                       </button>
                     </div>
                   </div>
@@ -542,8 +542,8 @@ Quiero que revises mi ficha técnica para armar mi planificación. ¿Cómo empez
                         04 / MODALIDAD
                       </dt>
                       <dd className="text-[12px] font-extrabold text-[#f3f0ec] m-0">
-                        {selectedModality === 'salta'
-                          ? 'Presencial Salta'
+                        {selectedModality === 'intensivo'
+                          ? 'Intensivo 12 Sem.'
                           : 'Coaching Online 1:1'}
                       </dd>
                     </div>
@@ -613,7 +613,7 @@ Quiero que revises mi ficha técnica para armar mi planificación. ¿Cómo empez
                     </button>
 
                     <span className="text-[10px] text-[#95859f]">
-                      Respuesta directa de Jorge · Salta Capital & Online
+                      Respuesta directa de Jorge Daniel · Cupos limitados
                     </span>
                   </div>
                 </div>

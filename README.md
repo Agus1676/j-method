@@ -1,6 +1,6 @@
 # J-METHOD | Plataforma Oficial de Calistenia & Coaching Deportivo
 
-Sitio web oficial y landing page de alta conversión para **Jorge Daniel** (@jorgedaniel_sw), entrenador y atleta de Street Workout / Calistenia en Salta Capital, Argentina.
+Sitio web oficial y landing page de alta conversión para **Jorge Daniel** (@jorgedaniel_sw), entrenador y atleta de Street Workout / Calistenia. Coaching 1 a 1 100% online.
 
 Diseñado siguiendo las mejores prácticas de la industria deportiva y la referencia de plataformas de coaching de élite (como *Ferny SW / Skill Map*).
 
@@ -27,16 +27,15 @@ Diseñado siguiendo las mejores prácticas de la industria deportiva y la refere
      - **Straddle / Full Planche**
    - Requisitos previos, fases 1 a 4 y tips de oro de Jorge.
 
-4. **Programas y Precios Transparentes:**
-   - **Skill Blueprint Autoguiado** (Ebook + librería de video)
-   - **Coaching Online 1 a 1** (Plan personalizado + corrección técnica semanal en video)
-   - **Coaching Presencial Salta Capital** (Clases presenciales y corrección en vivo)
+4. **Modalidades de Coaching:**
+   - **Coaching Online 1 a 1 Mensual** (Plan personalizado + corrección técnica semanal en video)
+   - **Programa Intensivo 12 Semanas** (Bloque especializado de alto rendimiento para skills)
 
 5. **Perfil del Coach & Redes:**
    - Instagram: [@jorgedaniel_sw](https://www.instagram.com/jorgedaniel_sw/)
    - TikTok: [@jorgedaniel_sw](https://www.tiktok.com/@jorgedaniel_sw)
    - YouTube: [@jorgedaniel_sw](https://www.youtube.com/@jorgedaniel_sw)
-   - Ubicación: Salta Capital, Argentina
+   - Formato: 100% Online · Sin Fronteras
    - WhatsApp: `+54 9 387 466-7930`
    - Email: `jorgedanielotz@gmail.com`
 

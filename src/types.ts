@@ -1,7 +1,7 @@
 export type SkillId = 'planche' | 'front-lever' | 'handstand' | 'muscle-up';
 export type SkillLevelId = 'base' | 'principiante' | 'intermedio' | 'avanzado';
 export type BlockerId = 'fuerza' | 'tecnica' | 'programacion' | 'estancamiento';
-export type ModalityId = 'online' | 'salta';
+export type ModalityId = 'online' | 'intensivo';
 
 export interface CoachProfile {
   name: string;

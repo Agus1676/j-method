@@ -11,8 +11,8 @@ export const COACH_DATA: CoachProfile = {
   name: "Jorge Daniel",
   brand: "J-METHOD",
   tagline: "Fuerza. Habilidades. Control.",
-  location: "Salta Capital, Argentina · Online & Presencial",
-  city: "Salta Capital",
+  location: "Coaching 100% Online · Sin Fronteras",
+  city: "Online Global",
   country: "Argentina",
   email: "jorgedanielotz@gmail.com",
   phoneRaw: "5493874667930",
@@ -244,7 +244,7 @@ export const METHOD_STEPS = [
   {
     number: '02',
     title: 'Correcciones que entendés.',
-    desc: 'Revisamos tu técnica en video (o en vivo en Salta) para que sepas exactamente qué cambiar en la siguiente sesión.',
+    desc: 'Revisamos tu técnica en video con feedback individual y directo para que sepas exactamente qué corregir en la siguiente sesión.',
   },
   {
     number: '03',
@@ -265,9 +265,9 @@ export const FAQ_DATA: FaqItem[] = [
       'Grabás tus series principales con el celular y se las enviás a Jorge por WhatsApp. Recibís correcciones puntuales sobre tu línea, bloqueo articular y posición escapular para aplicar en tu siguiente entrenamiento.',
   },
   {
-    question: '¿Dónde se realizan los entrenamientos presenciales?',
+    question: '¿Desde qué país puedo empezar el coaching online?',
     answer:
-      'Las sesiones presenciales se realizan en Salta Capital, Argentina. Coordinamos días y horarios directamente por WhatsApp para trabajar técnica, fuerza y progresiones en vivo.',
+      'Podés entrenar desde cualquier lugar del mundo. El sistema es 100% online y se adapta a tus horarios, tu gimnasio o tu parque de calistenia local con seguimiento directo y personalizado por WhatsApp.',
   },
   {
     question: '¿Tiene algún costo completar el diagnóstico inicial en la web?',

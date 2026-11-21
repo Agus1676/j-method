@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
         {/* Left Copy Column */}
         <div className="animate-jm-enter">
           <p className="jm-eyebrow mb-4">
-            COACHING DE CALISTENIA · SALTA & ONLINE
+            COACHING DE CALISTENIA 1:1 · ONLINE & GLOBAL
           </p>
 
           <h1
@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
             </a>
 
             <a href="#coaching" className="jm-btn-ghost w-full">
-              <span>VER MODALIDADES · ONLINE & SALTA</span>
+              <span>VER MODALIDADES DE COACHING 1:1</span>
               <span aria-hidden="true" className="text-base leading-none">↓</span>
             </a>
 
