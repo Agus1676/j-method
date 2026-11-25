@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
           </p>
 
           {/* Stacked Editorial Actions */}
-          <div className="flex flex-col items-stretch sm:items-start gap-2.5 max-w-[350px]">
+          <div className="flex flex-col items-stretch sm:items-start gap-2.5 max-w-[360px]">
             <a href="#diagnostico" className="jm-btn-primary w-full">
               <span>HACER DIAGNÓSTICO TÉCNICO (3 PASOS)</span>
               <span aria-hidden="true" className="text-base leading-none">↓</span>
@@ -53,6 +53,37 @@ export const Hero: React.FC = () => {
               <span>Hablar directo con Jorge Daniel por WhatsApp</span>
               <span aria-hidden="true" className="text-[#ef4255]">↗</span>
             </a>
+
+            {/* Quick Access Anchor Pills */}
+            <div className="flex flex-wrap items-center gap-1.5 pt-2">
+              <span className="text-[9px] uppercase tracking-wider text-[#797687] mr-1">
+                Explorar:
+              </span>
+              <a
+                href="#laboratorio"
+                className="text-[10px] font-bold text-[#d2cfde] hover:text-[#ef4255] bg-white/[0.05] hover:bg-white/[0.1] px-2 py-0.5 rounded transition-colors"
+              >
+                🔬 Laboratorio
+              </a>
+              <a
+                href="#roadmap"
+                className="text-[10px] font-bold text-[#d2cfde] hover:text-[#ef4255] bg-white/[0.05] hover:bg-white/[0.1] px-2 py-0.5 rounded transition-colors"
+              >
+                🗺️ Roadmap
+              </a>
+              <a
+                href="#calculadora"
+                className="text-[10px] font-bold text-[#d2cfde] hover:text-[#ef4255] bg-white/[0.05] hover:bg-white/[0.1] px-2 py-0.5 rounded transition-colors"
+              >
+                🧮 Calculadora
+              </a>
+              <a
+                href="#casos"
+                className="text-[10px] font-bold text-[#d2cfde] hover:text-[#ef4255] bg-white/[0.05] hover:bg-white/[0.1] px-2 py-0.5 rounded transition-colors"
+              >
+                ★ Casos
+              </a>
+            </div>
           </div>
 
           <p className="text-[10px] text-[#a3a3b0] mt-3">
