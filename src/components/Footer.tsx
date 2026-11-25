@@ -28,22 +28,13 @@ export const Footer: React.FC = () => {
           className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-[11px] text-[#b9a8c4]"
         >
           <a href="#diagnostico" className="hover:text-white transition-colors">
-            Test de Nivel
-          </a>
-          <a href="#laboratorio" className="hover:text-white transition-colors">
-            Laboratorio Biomecánico
-          </a>
-          <a href="#roadmap" className="hover:text-white transition-colors">
-            Roadmap
-          </a>
-          <a href="#calculadora" className="hover:text-white transition-colors">
-            Calculadora
+            Diagnóstico inicial
           </a>
           <a href="#coaching" className="hover:text-white transition-colors">
-            Modalidades 1:1
+            Modalidades
           </a>
-          <a href="#casos" className="hover:text-white transition-colors">
-            Casos de Éxito
+          <a href="#metodo" className="hover:text-white transition-colors">
+            El Método
           </a>
           <a href="#coach" className="hover:text-white transition-colors">
             Jorge Daniel
