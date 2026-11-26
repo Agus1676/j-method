@@ -28,7 +28,7 @@ export const CoachBio: React.FC = () => {
           {/* Premium Centered Bio Card */}
           <div className="bg-[#121216] border border-white/[0.12] rounded-[18px] sm:rounded-[22px] p-5 sm:p-7 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
             {/* Athlete Photo Container */}
-            <div className="max-w-[320px] mx-auto mb-5 sm:mb-6">
+            <div className="max-w-[280px] sm:max-w-[320px] mx-auto mb-5 sm:mb-6">
               <div className="relative rounded-[14px] overflow-hidden border border-white/[0.12] aspect-[4/5] bg-[#0b0b0e] shadow-2xl group">
                 <img
                   src="/images/hero.webp"

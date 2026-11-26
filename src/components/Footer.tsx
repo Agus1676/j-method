@@ -3,7 +3,7 @@ import { getWhatsAppLink } from '../data/content';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#0b0b0e] border-t border-white/[0.12] py-6 pb-24 md:pb-6">
+    <footer className="bg-[#0b0b0e] border-t border-white/[0.12] py-6 pb-28 md:pb-6">
       <div className="max-w-[1184px] mx-auto px-5 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-[#a895b2]">
         {/* Brand Monogram + Tagline */}
         <div className="flex items-center gap-3">
