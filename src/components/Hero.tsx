@@ -113,7 +113,7 @@ export const Hero: React.FC = () => {
                 <i className="w-1.5 h-1.5 rounded-full bg-[#ef4255] inline-block" aria-hidden="true" />
                 PRÁCTICA REAL. CRITERIO REAL.
               </span>
-              <strong className="text-[18px] sm:text-[22px] font-extrabold tracking-[-0.045em] leading-[1.08] text-[#f3f0ec]">
+              <strong className="text-[16px] sm:text-[22px] font-extrabold tracking-[-0.045em] leading-[1.08] text-[#f3f0ec]">
                 CONTROL
                 <br />
                 QUE SE ENTRENA.
@@ -153,7 +153,7 @@ export const Hero: React.FC = () => {
                   j<span>/</span>
                 </span>
               </div>
-              <strong className="text-[14px] sm:text-[16px] font-extrabold tracking-[-0.04em] leading-[1.22] text-[#20171f]">
+              <strong className="text-[13px] sm:text-[16px] font-extrabold tracking-[-0.04em] leading-[1.22] text-[#20171f]">
                 Ubicá tu nivel.
                 <br />
                 Armá tu plan.

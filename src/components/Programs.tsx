@@ -56,28 +56,28 @@ export const Programs: React.FC = () => {
 
               {/* Architectural 3-Column Spec Strip */}
               <div className="grid grid-cols-3 border-y border-[#21191e]/15 my-5 py-3">
-                <div className="pr-3 border-r border-[#21191e]/15">
-                  <span className="block text-[9px] font-bold uppercase tracking-wider text-[#776472]">
-                    Planificación
+                <div className="pr-2 sm:pr-3 border-r border-[#21191e]/15">
+                  <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-[#776472]">
+                    Formato
                   </span>
-                  <strong className="text-[17px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#21191e]">
-                    100% 1 a 1
+                  <strong className="text-[15px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#21191e]">
+                    1 a 1
                   </strong>
                 </div>
-                <div className="px-3 border-r border-[#21191e]/15">
-                  <span className="block text-[9px] font-bold uppercase tracking-wider text-[#776472]">
-                    Revisión Técnica
+                <div className="px-2 sm:px-3 border-r border-[#21191e]/15">
+                  <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-[#776472]">
+                    Técnica
                   </span>
-                  <strong className="text-[17px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#21191e]">
+                  <strong className="text-[15px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#21191e]">
                     En Video
                   </strong>
                 </div>
-                <div className="pl-3">
-                  <span className="block text-[9px] font-bold uppercase tracking-wider text-[#776472]">
-                    Seguimiento
+                <div className="pl-2 sm:pl-3">
+                  <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-[#776472]">
+                    Ajustes
                   </span>
-                  <strong className="text-[17px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#a82140]">
-                    Semanal
+                  <strong className="text-[15px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#a82140]">
+                    Semanales
                   </strong>
                 </div>
               </div>
@@ -144,27 +144,27 @@ export const Programs: React.FC = () => {
 
               {/* Architectural 3-Column Spec Strip */}
               <div className="grid grid-cols-3 border-y border-white/[0.12] my-5 py-3">
-                <div className="pr-3 border-r border-white/[0.12]">
-                  <span className="block text-[9px] font-bold uppercase tracking-wider text-[#aaa7b4]">
+                <div className="pr-2 sm:pr-3 border-r border-white/[0.12]">
+                  <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-[#aaa7b4]">
                     Duración
                   </span>
-                  <strong className="text-[17px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#f3f0ec]">
+                  <strong className="text-[15px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#f3f0ec]">
                     12 Semanas
                   </strong>
                 </div>
-                <div className="px-3 border-r border-white/[0.12]">
-                  <span className="block text-[9px] font-bold uppercase tracking-wider text-[#aaa7b4]">
+                <div className="px-2 sm:px-3 border-r border-white/[0.12]">
+                  <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-[#aaa7b4]">
                     Modalidad
                   </span>
-                  <strong className="text-[17px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#f3f0ec]">
+                  <strong className="text-[15px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#f3f0ec]">
                     100% Online
                   </strong>
                 </div>
-                <div className="pl-3">
-                  <span className="block text-[9px] font-bold uppercase tracking-wider text-[#aaa7b4]">
+                <div className="pl-2 sm:pl-3">
+                  <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-[#aaa7b4]">
                     Enfoque
                   </span>
-                  <strong className="text-[17px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#ef4255]">
+                  <strong className="text-[15px] sm:text-[19px] font-extrabold tracking-[-0.04em] text-[#ef4255]">
                     Skills & SW
                   </strong>
                 </div>
