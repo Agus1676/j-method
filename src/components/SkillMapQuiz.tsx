@@ -1,14 +1,16 @@
 import React, { useState, useRef } from 'react';
+import { useContent } from '../context/ContentContext';
 import {
-  SKILLS_CATALOG,
   SKILL_LABELS,
   LEVEL_LABELS,
   BLOCKER_OPTIONS,
-  getWhatsAppLink,
 } from '../data/content';
 import { SkillId, SkillLevelId, BlockerId, ModalityId } from '../types';
 
 export const SkillMapQuiz: React.FC = () => {
+  const { content, getWhatsAppLink } = useContent();
+  const skillsCatalog = content.skills;
+
   const [step, setStep] = useState<number>(0);
   const [selectedSkill, setSelectedSkill] = useState<SkillId | null>(null);
   const [selectedPoint, setSelectedPoint] = useState<SkillLevelId | null>(null);
@@ -19,7 +21,7 @@ export const SkillMapQuiz: React.FC = () => {
   const stageTitleRef = useRef<HTMLHeadingElement>(null);
 
   const currentSkillObj =
-    SKILLS_CATALOG.find((s) => s.id === selectedSkill) || null;
+    skillsCatalog.find((s) => s.id === selectedSkill) || null;
   const currentBlockerObj =
     BLOCKER_OPTIONS.find((b) => b.id === selectedBlocker) || null;
 
@@ -208,7 +210,7 @@ Quiero que revises mi ficha técnica para armar mi planificación. ¿Cómo empez
 
                 <fieldset className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 border-0 p-0 m-0">
                   <legend className="sr-only">Tu skill prioritaria</legend>
-                  {SKILLS_CATALOG.map((sk) => {
+                  {skillsCatalog.map((sk) => {
                     const isSelected = selectedSkill === sk.id;
                     return (
                       <label

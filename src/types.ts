@@ -20,6 +20,11 @@ export interface CoachProfile {
   tiktokUrl: string;
   youtube: string;
   youtubeUrl: string;
+  image: string;
+  heroImage1: string;
+  heroImage2: string;
+  bioP1: string;
+  bioP2: string;
 }
 
 export interface SkillDefinition {
@@ -41,4 +46,37 @@ export interface SkillDefinition {
 export interface FaqItem {
   question: string;
   answer: string;
+}
+
+export interface SiteContent {
+  coach: CoachProfile;
+  hero: {
+    eyebrow: string;
+    title1: string;
+    titleHighlight: string;
+    title2: string;
+    description: string;
+    guaranteeText: string;
+    athleteQuoteTitle: string;
+    athleteQuoteSubtitle: string;
+  };
+  metrics: {
+    metric1Val: string;
+    metric1Label: string;
+    metric2Val: string;
+    metric2Label: string;
+    metric3Val: string;
+    metric3Label: string;
+  };
+  coachingFeatures: {
+    heading: string;
+    item1Title: string;
+    item1Desc: string;
+    item2Title: string;
+    item2Desc: string;
+    item3Title: string;
+    item3Desc: string;
+  };
+  skills: SkillDefinition[];
+  faq: FaqItem[];
 }
