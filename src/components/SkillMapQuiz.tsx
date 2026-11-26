@@ -101,7 +101,7 @@ Quiero que revises mi ficha técnica para armar mi planificación. ¿Cómo empez
     <section
       id="diagnostico"
       aria-labelledby="map-flow-title"
-      className="max-w-[1184px] mx-auto px-5 sm:px-12 py-12 lg:py-16 grid grid-cols-1 lg:grid-cols-[0.38fr_1fr] items-start gap-7 lg:gap-12 scroll-mt-20"
+      className="max-w-[1184px] mx-auto px-5 sm:px-12 py-8 lg:py-12 grid grid-cols-1 lg:grid-cols-[0.38fr_1fr] items-start gap-7 lg:gap-12 scroll-mt-20 border-t border-white/[0.08]"
     >
       {/* Left Sticky Editorial Intro */}
       <div className="lg:sticky lg:top-28">

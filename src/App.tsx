@@ -2,7 +2,6 @@ import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { SkillMapQuiz } from './components/SkillMapQuiz';
-import { Programs } from './components/Programs';
 import { CoachBio } from './components/CoachBio';
 import { Footer } from './components/Footer';
 import { MobileStickyBar } from './components/MobileStickyBar';
@@ -14,16 +13,13 @@ export const App: React.FC = () => {
       <Navbar />
 
       <main id="ss-main">
-        {/* Asymmetric Editorial Hero + Route Strip */}
+        {/* Asymmetric Editorial Hero */}
         <Hero />
 
         {/* 3-Step Interactive Technical Assessment & Biomechanical Dossier */}
         <SkillMapQuiz />
 
-        {/* Editorial Contrast Coaching Modalities (Online 1:1 vs Intensivo 12 Semanas) + Method */}
-        <Programs />
-
-        {/* Coach Bio (Jorge Daniel @jorgedaniel_sw) + Compact Editorial FAQ */}
+        {/* Coach Bio (Calisrama Style) + Integrated 1:1 Coaching Offer + Compact FAQ */}
         <CoachBio />
       </main>
 

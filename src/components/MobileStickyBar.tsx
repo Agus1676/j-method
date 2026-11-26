@@ -13,10 +13,10 @@ export const MobileStickyBar: React.FC = () => {
       </a>
 
       <a
-        href="#coaching"
+        href="#coach"
         className="bg-[#1a191f] border border-white/20 text-[#f3f0ec] rounded-[7px] min-h-[42px] px-2.5 py-2 text-[10px] font-bold flex items-center justify-between gap-1"
       >
-        <span>Modalidades</span>
+        <span>Sobre Jorge</span>
         <span aria-hidden="true">↓</span>
       </a>
 

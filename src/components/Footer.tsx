@@ -3,15 +3,15 @@ import { getWhatsAppLink } from '../data/content';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#0b0b0e] border-t border-white/[0.12] py-7 pb-24 md:pb-7">
-      <div className="max-w-[1184px] mx-auto px-5 sm:px-12 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-[#a895b2]">
+    <footer className="bg-[#0b0b0e] border-t border-white/[0.12] py-6 pb-24 md:pb-6">
+      <div className="max-w-[1184px] mx-auto px-5 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-[#a895b2]">
         {/* Brand Monogram + Tagline */}
         <div className="flex items-center gap-3">
           <a
             href="#"
-            className="inline-flex items-center gap-2 text-[#f0e7ed] font-extrabold tracking-[-0.04em] text-[15px]"
+            className="inline-flex items-center gap-2 text-[#f0e7ed] font-extrabold tracking-[-0.04em] text-[14px]"
           >
-            <span className="jm-monogram text-[28px]" aria-hidden="true">
+            <span className="jm-monogram text-[24px]" aria-hidden="true">
               j<span>/</span>
             </span>
             <span>J-METHOD</span>
@@ -19,25 +19,22 @@ export const Footer: React.FC = () => {
           <span className="text-white/20">·</span>
           <span>Fuerza. Habilidades. Control.</span>
           <span className="text-white/20 hidden sm:inline">·</span>
-          <span className="hidden sm:inline">Coaching 100% Online · Sin Fronteras</span>
+          <span className="hidden sm:inline">Coaching 100% Online</span>
         </div>
 
-        {/* Minimal Editorial Nav */}
+        {/* Minimal Nav */}
         <nav
           aria-label="Explorar J-Method"
           className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-[11px] text-[#b9a8c4]"
         >
           <a href="#diagnostico" className="hover:text-white transition-colors">
-            Diagnóstico inicial
-          </a>
-          <a href="#coaching" className="hover:text-white transition-colors">
-            Modalidades
-          </a>
-          <a href="#metodo" className="hover:text-white transition-colors">
-            El Método
+            Test de Nivel
           </a>
           <a href="#coach" className="hover:text-white transition-colors">
-            Jorge Daniel
+            Sobre Jorge
+          </a>
+          <a href="#faq" className="hover:text-white transition-colors">
+            Preguntas
           </a>
           <a
             href={getWhatsAppLink('Hola Jorge! Vengo de la web J-METHOD.')}
